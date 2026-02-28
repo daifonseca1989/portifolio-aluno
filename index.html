@@ -3,137 +3,156 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfólio Profissional</title>
+<title>Portal DS - Aprendizado em Tecnologia</title>
 
 <style>
-    body{
-        margin:0;
-        font-family: 'Segoe UI', sans-serif;
-        background:#f4f6fb;
-        color:#333;
-    }
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
 
-    header{
-        background:linear-gradient(120deg,#1f3c88,#39a0ed);
-        color:white;
-        padding:60px 20px;
-        text-align:center;
-    }
+/* MENU */
+header{
+    background:#111;
+    padding:15px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
 
-    header h1{
-        margin:0;
-        font-size:42px;
-    }
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    background:#1e1e1e;
+    padding:10px;
+}
 
-    header p{
-        font-size:20px;
-        opacity:0.9;
-    }
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:6px;
+    transition:0.3s;
+}
 
-    section{
-        padding:50px 20px;
-        max-width:1000px;
-        margin:auto;
-    }
+nav a:hover{
+    background:#00c6ff;
+}
 
-    h2{
-        text-align:center;
-        margin-bottom:30px;
-        color:#1f3c88;
-    }
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
 
-    .cards{
-        display:flex;
-        flex-wrap:wrap;
-        gap:20px;
-        justify-content:center;
-    }
+.hero h1{
+    font-size:40px;
+}
 
-    .card{
-        background:white;
-        padding:25px;
-        width:280px;
-        border-radius:12px;
-        box-shadow:0 8px 20px rgba(0,0,0,0.08);
-        transition:0.3s;
-    }
+button{
+    background:#00c6ff;
+    border:none;
+    padding:12px 20px;
+    font-size:16px;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
 
-    .card:hover{
-        transform:translateY(-6px);
-    }
+button:hover{
+    background:#0072ff;
+}
 
-    .btn{
-        display:inline-block;
-        margin-top:15px;
-        padding:10px 18px;
-        background:#1f3c88;
-        color:white;
-        border-radius:20px;
-        text-decoration:none;
-        font-size:14px;
-    }
+/* CARDS */
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+}
 
-    footer{
-        background:#1f3c88;
-        color:white;
-        text-align:center;
-        padding:20px;
-        margin-top:40px;
-    }
+.card{
+    background:white;
+    color:#333;
+    width:280px;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    text-align:center;
+    background:#111;
+    padding:20px;
+    margin-top:30px;
+}
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Daiane Silva Fonseca</h1>
-    <p>Desenvolvedor(a) | Professora de Sistemas | BACK-end</p>
-</header>
+<header>Portal Desenvolvimento de Sistemas</header>
 
-<section>
-    <h2>Amo minha profissão</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-        Sou professora  de desenvolvimento de sistemas, apaixonado(a) por tecnologia,
-        programação e criação de projetos web. Este site reúne meus trabalhos,
-        habilidades e contatos profissionais.
-    </p>
+<nav>
+<a href="#">Início</a>
+<a href="#">Aulas</a>
+<a href="#">Projetos</a>
+<a href="#">Contato</a>
+</nav>
+
+<section class="hero">
+<h1>Aprenda Programação na Prática</h1>
+<p>HTML • CSS • JavaScript • Python • GitHub</p>
+<button onclick="mensagem()">Clique para interagir</button>
 </section>
 
-<section>
-    <h2>Projetos</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Projeto 1</h3>
-            <p>Esse projeto é para aprendizagem doa alunos.</p>
-            <a href="#" class="btn">Ver projeto</a>
-        </div>
+<section class="container">
 
-        <div class="card">
-            <h3>Projeto 2</h3>
-            <p>Esse projeto é para interacão dos alunos.</p>
-            <a href="#" class="btn">Ver projeto</a>
-        </div>
+<div class="card">
+<h2>Front-end</h2>
+<p>Aprenda a criar sites modernos com HTML, CSS e JavaScript.</p>
+<button onclick="alert('Você escolheu Front-end!')">Saiba mais</button>
+</div>
 
-        <div class="card">
-            <h3>Projeto 3</h3>
-            <p>Projeto de aprendizagem.</p>
-            <a href="#" class="btn">Ver projeto</a>
-        </div>
-    </div>
-</section>
+<div class="card">
+<h2>Back-end</h2>
+<p>Conheça lógica, banco de dados e servidores.</p>
+<button onclick="alert('Você escolheu Back-end!')">Saiba mais</button>
+</div>
 
-<section>
-    <h2>(44)999551506</h2>
-    <p style="text-align:center;">
-        📧 daiane.silva.fonseca@escolapr.gov.br<br>
-        💼 LinkedIn: seu perfil<br>
-        💻 GitHub: daifonseca1989
-    </p>
+<div class="card">
+<h2>Projetos</h2>
+<p>Construa sistemas reais para portfólio.</p>
+<button onclick="alert('Vamos programar!')">Começar</button>
+</div>
+
 </section>
 
 <footer>
-    <p>© 2026 - Daiane Silva Fonseca | Portfólio Profissional</p>
+© 2026 - Portal Educacional DS
 </footer>
+
+<script>
+function mensagem(){
+    let nome = prompt("Digite seu nome:");
+    if(nome){
+        alert("Bem-vindo ao portal, " + nome + "!");
+    }else{
+        alert("Olá aluno! Aproveite o site.");
+    }
+}
+</script>
 
 </body>
 </html>
